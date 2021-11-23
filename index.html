@@ -428,18 +428,72 @@
               </li>
             </ul>
           </div>
-        </div>
+          <form name="subscription_form">
+            <div class="subscription-form">
+            <label class="subscription-form-label">
+              Подпишитесь на рассылку
+            </label>
+            <input type="email" name="email" placeholder="E-mail" class="subscription-form-input">
+            <button type="submit" class="subscription-form-button">Подписаться
+              <svg class="subscription-send-button">
+                <use href="./img/sprite_send.svg#icon-icon-send" ></use>
+              </svg>
+            </button>
+          </div>
+          </form>
+        </div> 
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-content">
-        <p>
-
-        </p>
+          <form action="#" class="registration-form">
+            <h3 class="registration-title">
+              Оставьте свои данные, мы вам перезвоним
+            </h3>
+            <span class="registration-wrapper">
+            <label class="registration-label">
+              Имя
+              <svg class="registration-icon">
+                <use href="./img/sprite_registration_form.svg#icon-person-black"></use>
+              </svg>
+            </label>
+            <input type="text" name="username" id="username" class="registration-input">
+            </span>
+          <span class="registration-wrapper">
+            <label class="registration-label">
+              Телефон
+              <svg class="registration-icon">
+                <use href="./img/sprite_registration_form.svg#icon-phone-black"></use>
+              </svg>
+            </label>
+            <input type="text" name="phone_number" id="tel" class="registration-input">
+          </span>
+          <span class="registration-wrapper">
+            <label class="registration-label">
+              Почта
+              <svg class="registration-icon">
+                <use href="./img/sprite_registration_form.svg#icon-email-black"></use>
+              </svg>
+            </label>
+            <input type="email" name="mail" id="mail" class="registration-input">
+          </span>
+          <span class="registration-wrapper">
+            <label class="registration-label">
+              Комментарий
+          </label>
+          <textarea name="comment" rows="5" placeholder="Введите текст" class="registration-comment"></textarea>
+        </span>
+        <div class="checkbox-container">
+        <input type="checkbox" name="agreement" class="registration-checkbox">
+          <label class="checkbox-label">Соглашаюсь с рассылкой и принимаю 
+            <a href="" class="comment-link">Условия договора</a></label>
+          </div>
+        <button type="submit" class="send-button">Отправить</button>
+          </form>
         <button class="modal-button" data-modal-close>
           <svg class="modal-button-icon">
-            <use href="./img/sprite_close.svg#icon-close"></use>
+            <use href="./img/sprite_button_close.svg#icon-close-black" ></use>
           </svg>
         </button>
       </div>
